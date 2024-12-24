@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+li {
+  @apply font-medium cursor-pointer duration-500 hover:translate-x-3 hover:text-[#FF5432];
+}
+
+.glass {
+  @apply bg-[#ad2b2e40] shadow-[0_8px_32px_0_rgba(31,38,135,0.37)] backdrop-blur-sm border border-white/20 rounded-bl-lg rounded-br-lg md:bg-none md:shadow-none md:backdrop-blur-none md:border-0 md:rounded-none md:bg-transparent;
+}
+
+.btn {
+  @apply p-3 px-12 font-semibold my-5 text-white bg-[#545269] shadow-2xl;
+}
+
+.corner {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background: transparent;
+}
+.top-left {
+  top: 0;
+  left: 0;
+  border-top: 2px solid red;
+  border-left: 2px solid red;
+}
+.bottom-right {
+  bottom: 0;
+  right: 0;
+  border-bottom: 2px solid red;
+  border-right: 2px solid red;
+}
